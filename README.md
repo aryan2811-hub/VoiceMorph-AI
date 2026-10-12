@@ -1,61 +1,32 @@
-﻿\# VoiceMorph-AI
+# VoiceMorph-AI
 
+A real-time voice changer for Windows. Speak into your microphone and hear your voice with an effect applied, live. It also has an optional AI mode that records your voice and converts it to the voice of a reference recording.
 
+## Features
 
-A real-time voice changer for Windows. Speak into your microphone and hear your
+- **Real-time effects:** normal, deep, high, robot, echo, radio, alien
+- **Desktop app** (PySide6) with microphone and output selection, intensity, volume, mute and live input/output level meters
+- **Live health status:** block size, slowest callback, underflow and overflow counts
+- **Settings are remembered** between runs (and a broken settings file never crashes the app)
+- **AI voice (optional):** record or pick a file, convert it to a reference voice with kNN-VC, and play the result. It runs in a separate process so the window never freezes.
+- **164 automated tests** (pytest)
 
-voice with an effect applied, live. It also has an optional AI mode that records
+## Download (Windows, no Python needed)
 
-your voice and converts it to the voice of a reference recording.
-
-
-
-\## Features
-
-
-
-\- \*\*Real-time effects:\*\* normal, deep, high, robot, echo, radio, alien
-
-\- \*\*Desktop app\*\* (PySide6) with microphone and output selection, intensity, volume, mute and live input/output level meters
-
-\- \*\*Live health status:\*\* block size, slowest callback, underflow and overflow counts
-
-\- \*\*Settings are remembered\*\* between runs (and a broken settings file never crashes the app)
-
-\- \*\*AI voice (optional):\*\* record or pick a file, convert it to a reference voice with kNN-VC, and play the result. It runs in a separate process so the window never freezes.
-
-\- \*\*164 automated tests\*\* (pytest)
-
-
-
-\## Download (Windows, no Python needed)
-
-
-
-1\. Go to the \*\*Releases\*\* page: https://github.com/aryan2811-hub/VoiceMorph-AI/releases
-
-2\. Download `VoiceMorph-win.zip` and extract it.
-
-3\. Open the extracted folder and run `VoiceMorph.exe`.
-
-
+1. Go to the **Releases** page: https://github.com/aryan2811-hub/VoiceMorph-AI/releases
+2. Download `VoiceMorph-win.zip` and extract it.
+3. Open the extracted folder and run `VoiceMorph.exe`.
 
 Notes:
 
-\- Windows may show "Windows protected your PC" because the app is not code-signed. Click \*\*More info\*\*, then \*\*Run anyway\*\*.
+- Windows may show "Windows protected your PC" because the app is not code-signed. Click **More info**, then **Run anyway**.
+- Use **headphones**. With speakers, your output goes back into the microphone and you will hear feedback.
+- Some antivirus tools may wrongly flag the .exe because it is built with PyInstaller. The full source code is in this repo.
+- The downloaded app includes the real-time effects only. The AI voice mode is not included (see below).
 
-\- Use \*\*headphones\*\*. With speakers, your output goes back into the microphone and you will hear feedback.
-
-\- The downloaded app includes the real-time effects only. The AI voice mode is not included (see below).
-
-
-
-\## Run from source
-
-
+## Run from source
 
 Requires Python 3.13 on Windows.
-
 
 
 ```powershell
