@@ -1,0 +1,14 @@
+.venv/
+.venv-ai/
+dist/
+build/
+__pycache__/
+.pytest_cache/
+ai_output/
+ai_test/
+configs/settings.json
+*.zip
+*.wav
+app_backup.py
+
+app_backup.py
