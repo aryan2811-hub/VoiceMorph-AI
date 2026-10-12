@@ -1,4 +1,4 @@
-\# VoiceMorph-AI
+﻿\# VoiceMorph-AI
 
 
 
@@ -32,7 +32,7 @@ your voice and converts it to the voice of a reference recording.
 
 
 
-1\. Go to the \*\*Releases\*\* page: https://github.com/YOUR-USERNAME/VoiceMorph-AI/releases
+1\. Go to the \*\*Releases\*\* page: https://github.com/aryan2811-hub/VoiceMorph-AI/releases
 
 2\. Download `VoiceMorph-win.zip` and extract it.
 
@@ -60,7 +60,7 @@ Requires Python 3.13 on Windows.
 
 ```powershell
 
-git clone https://github.com/YOUR-USERNAME/VoiceMorph-AI.git
+git clone https://github.com/aryan2811-hub/VoiceMorph-AI.git
 
 cd VoiceMorph-AI
 
